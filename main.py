@@ -1,8 +1,6 @@
 import Controller as Controller
 from Invoice import Invoice
 
-#carga com pedidos de energéticos
-
 # Fazer um pedido
 order = Controller.receive_order()
 
