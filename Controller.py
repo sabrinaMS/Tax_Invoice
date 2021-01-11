@@ -5,17 +5,17 @@ def get_Supermarket():
     supermarket = input("Qual o nome do Estabelecimento? ")
     return supermarket
 
-# recebe uma quantidade (int) de energéticos.
+# recebe uma quantidade (int) de produtos.
 def get_amount():
     while True:
         try:
-            amount = int(input("Qual a quantidade de energético neste pedido? "))
+            amount = int(input("Qual a quantidade de produtos neste pedido? "))
         except:
             continue
         else:
             return amount
 
-# cria um pedido, que é compostos por nome do estabelecimento e pela quantidade de energetico
+# cria um pedido, que é composto por nome do estabelecimento e pela quantidade de produto
 def create_order():
     supermarket = get_Supermarket()
     amount = get_amount()
