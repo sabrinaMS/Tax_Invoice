@@ -1,9 +1,9 @@
 from  Order import Order
 
 class Invoice:
-    # calculo do imposto,
-    # a partir da lista de pedidos recebidos da referente carga de energéticos
-    # cada pedidos é salva no array de lista de pedidos (carga do caminhão)
+    # cálculo dos valores da nota:
+    # feito a partir da lista de pedidos recebidos, referentes a carga de produtos solicitada
+    # cada pedido é salva no array de lista de pedidos/carga
 
     def apply_discount(amount):
         if amount >= 200:
@@ -13,7 +13,7 @@ class Invoice:
         else:
             return 4.5
 
-
+    # cálculo de imposto do pedido geral
     def calculate_taxes(orders):
         calculated_orders_taxes =[]
         for order in orders:
